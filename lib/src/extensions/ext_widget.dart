@@ -21,8 +21,8 @@ extension PaddingsExtensions on Widget {
   /// make it flexible
   Widget makeItFlexible({int flex = 1}) {
     return Flexible(
-      child: this,
       flex: flex,
+      child: this,
     );
   }
 

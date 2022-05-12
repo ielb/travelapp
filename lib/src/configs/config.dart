@@ -9,148 +9,28 @@ class Config {
   static Config instance = Config._();
 
   // ? Data
-  String appName = 'chaty';
-  String baseUrl = "https://api.themoviedb.org/3/";
-  String apiKey = "";
-  String imageBaseUrl = "https://image.tmdb.org/t/p/";
+  String appName = 'Travely';
 
   // *  Colors
-  Color get primaryColor => const Color(0xFFFF6600);
-  Color get boxColor => const Color(0xFFF0F0F0);
-  Color get textColor => const Color(0xFF232323);
-  Color get loaderGrey => const Color.fromRGBO(0, 0, 0, 0.07);
-  Color get lightGrey => const Color(0xFFf0f0f0);
-  Color get grey => const Color(0xFF808080);
-  Color get black => const Color(0xFF232323);
-  Color get white => const Color(0xFFFFFFFF);
-  Color get blue => const Color(0xFF3498db);
-  Color get green => const Color(0xFF4caf50);
-  Color get placeholderTextColor => const Color(0xFF232323);
-  Color get red => const Color(0xFFe52d27);
-  Color get appBackgroundColor => const Color(0xfff0f0f0);
-  Color get headingGrey => const Color(0xFF999999);
-  Color get seperatorColorGrey => const Color(0xfff4f4f4);
-  Color get googleRed => const Color(0xFFdd4b39);
-  Color get facbookBlue => const Color(0xFF3B5998);
-  Color get firstPackage => const Color(0xFFFFD9C0);
+  Color get primary => const Color(0xFF4A99FD);
+  Color get secondary => const Color(0xFF66D2CC);
+  Color get white => const Color(0x0fffffff);
+  Color get black => const Color(0xFF000000);
+  Color get grey => const Color(0xFFB1B1B1);
+  Color get facebookColor => const Color(0xFF3C5A99);
+  Color get appleColor => const Color(0xFF1F1F1F);
 
-  // *  ThemeData
-  ThemeData theme() => ThemeData(
-      backgroundColor: const Color(0xFFF0F0F0),
-      primaryColor: const Color(0xFFFF6600),
-      colorScheme: const ColorScheme(
-        brightness: Brightness.light,
-        primary: Color(0xFFFF6600),
-        onPrimary: Color(0xFFFF6600),
-        error: Color(0xFFe52d27),
-        secondary: Color(0xFFFF6600),
-        onSecondary: Color(0xFFFF6600),
-        surface: Color(0xFFF0F0F0),
-        onSurface: Color(0xFFF0F0F0),
-        background: Color(0xFFF0F0F0),
-        onBackground: Color(0xFFF0F0F0),
-        onError: Color(0xFFe52d27),
-      ),
-      textTheme: TextTheme(
-        headline1: GoogleFonts.poppins(
-          fontSize: 24,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        headline2: GoogleFonts.poppins(
-          fontSize: 20,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        headline3: GoogleFonts.poppins(
-          fontSize: 18,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        headline4: GoogleFonts.poppins(
-          fontSize: 16,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        headline5: GoogleFonts.poppins(
-          fontSize: 14,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        headline6: GoogleFonts.poppins(
-          fontSize: 12,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        subtitle1: GoogleFonts.poppins(
-          fontSize: 12,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        subtitle2: GoogleFonts.poppins(
-          fontSize: 10,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        bodyText1: GoogleFonts.poppins(
-          fontSize: 12,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        bodyText2: GoogleFonts.poppins(
-          fontSize: 10,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        button: GoogleFonts.poppins(
-          fontSize: 12,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-        caption: GoogleFonts.poppins(
-          fontSize: 8,
-          fontWeight: FontWeight.w400,
-          color: const Color(0xFF232323),
-        ),
-      ));
+  // * Theme
+
+  ThemeData get theme => ThemeData();
 
   // * Assets Images
-  String appIcon = "assets/images/logooo.png";
-  String get appLogo => "assets/images/chaty.png";
-  String get cityImage => "assets/images/agadir.png";
-  String get berline => "assets/images/berline.png";
-
-  // ! bottom bar icons
-
-  String get homeIcon => "assets/images/home.png";
-  String get searchIcon => "assets/images/search.png";
-  String get profileIcon => "assets/images/profile.png";
-  String get parkingIcon => "assets/images/parking.png";
-  String get addCarIcon => "assets/images/addcar.png";
-  String get reelsIcon => "assets/images/reels.png";
-  String get facebookLogo => "assets/images/fb_logo.png";
-  String get googleLogo => "assets/images/google_plus_logo.png";
-  String get appleLogo => "assets/images/apple.png";
-
-  String get sortAscendingIcon => "assets/images/sort-ascending.png";
-
-  String get parkingBackground => "assets/images/bg-parking.png";
-  String get addCarBackground => "assets/images/bg-add.png";
-  String get authbg => "assets/images/bg-motif.png";
-
+  String get intro1 => 'assets/intro_1.png';
+  String get intro2 => 'assets/intro_2.png';
+  String get intro3 => 'assets/intro_3.png';
+  String get icon => 'assets/icon.png';
+  String get arrow => 'assets/arrow.png';
   //! languages flags
-
-  String get ar => "assets/images/ar.png";
-  String get en => "assets/images/en.png";
-  String get fr => "assets/images/fr.png";
-
-  // ? links
-
-  String get faqLink => "https://chaty.com/en/help";
-  String get privacyLink => "https://chaty.com/en/privacy";
-  String get aboutLink => "https://chaty.com/about";
-  String get contactLink => "https://chaty.com/en/contact-us";
-  String get resetPasswordLink => "https://www.chaty.com/fr/password/reset";
 
   // ? sizes
 
@@ -161,10 +41,10 @@ class Config {
   Widget loader() {
     return Platform.isIOS
         ? CupertinoActivityIndicator(
-            color: primaryColor,
+            color: primary,
           )
         : CircularProgressIndicator(
-            color: primaryColor,
+            color: primary,
           );
   }
 
@@ -190,7 +70,7 @@ class Config {
                         TextSpan(
                             text: "Faire une offre",
                             style: GoogleFonts.poppins(
-                                color: grey,
+                                color: Colors.grey,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700),
                             children: [
@@ -198,7 +78,7 @@ class Config {
                                 text:
                                     "\nGrace à ce service vous pourriez faire une offre afin de négocier le prix de la voiture, veuillez vous identifier pour en profiter ",
                                 style: GoogleFonts.poppins(
-                                    color: grey,
+                                    color: Colors.grey,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w400),
                               ),
@@ -216,7 +96,7 @@ class Config {
                               child: Container(
                                 height: 50,
                                 decoration: BoxDecoration(
-                                  color: grey.withOpacity(.4),
+                                  color: Colors.grey.withOpacity(.4),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Center(
@@ -240,7 +120,7 @@ class Config {
                               child: Container(
                                 height: 50,
                                 decoration: BoxDecoration(
-                                  color: primaryColor,
+                                  color: primary,
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Center(
@@ -270,31 +150,4 @@ class Config {
 
   // * functions
 
-  substringPrice(double price) {
-    return price == 0
-        ? 'Prix non spécifié'
-        : price.toString().length == 4
-            ? price.toString().substring(0, 1) +
-                " " +
-                price.toString().substring(1, 3) +
-                " MAD"
-            : price.toString().length == 5
-                ? price.toString().substring(0, 2) +
-                    " " +
-                    price.toString().substring(2, 3) +
-                    " MAD"
-                : price.toString().length == 6
-                    ? price.toString().substring(0, 3) +
-                        " " +
-                        price.toString().substring(3, 3) +
-                        " MAD"
-                    : price.toString().length == 7
-                        ? price.toString().substring(0, 1) +
-                            " " +
-                            price.toString().substring(1, 3) +
-                            " " +
-                            price.toString().substring(4, 3) +
-                            " MAD"
-                        : price.toString() + " MAD";
-  }
 }
